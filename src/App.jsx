@@ -1,9 +1,9 @@
 import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
+import MovieList from './components/MovieList'
+import Hero from './components/Hero'
+import Nav from './components/Nav'
+import Footer from './components/Footer'
 import './App.css'
-
 import React from 'react'
 
 function App() {
@@ -62,7 +62,29 @@ const movies=[
 
 
   return (
-    <div>App</div>
+     <>   
+  <Nav/>
+  <Hero/>
+<section className="px-6 md:px-12 pb-16">
+
+        <div className="flex justify-between items-center mb-8">
+
+          <h2 className="text-xl md:text-2xl font-semibold">
+            Popular Movies
+          </h2>
+
+          <span className="text-gray-400 text-sm">
+           {movies.length} Movies
+          </span>
+
+        </div>
+        <MovieList movies={movies} />
+
+
+      </section>
+
+<Footer/>
+    </>
   )
 }
 
