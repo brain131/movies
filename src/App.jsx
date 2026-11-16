@@ -3,7 +3,7 @@ import MovieList from './components/MovieList'
 import Hero from './components/Hero'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
-import './App.css'
+
 import React from 'react'
 
 function App() {

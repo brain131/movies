@@ -1,6 +1,6 @@
 import React from 'react'
 
-function MovieCard() {
+function MovieCard({movie}) {
   return (
   <div className="bg-[#151c2c] rounded-xl overflow-hidden border border-white/5 hover:border-purple-500 transition duration-300 hover:-translate-y-2">
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import MovieCard from './MovieCard'
-export default function MovieList() {
+export default function MovieList({movies}) {
   return (
 <div>
 
